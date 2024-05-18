@@ -86,6 +86,7 @@ pushFilesToStorage(catalogImages: CatalogModel[]): Observable<any[]> {
           businesses.find(business => business.registrationnumber == this.number)
       )
     );
+    
   }
 getImagesByPhoneNumber(): Observable<CatalogModel[]> {
   return this.db.list<CatalogModel>(this.dbPath).valueChanges();
