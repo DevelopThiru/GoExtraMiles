@@ -83,7 +83,7 @@ pushFilesToStorage(catalogImages: CatalogModel[]): Observable<any[]> {
         changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))
       ),
       map(businesses =>
-          businesses.find(business => business.registrationnumber == this.number)//
+          businesses.find(business => business.registrationnumber == this.number)////
       )
     );
      
